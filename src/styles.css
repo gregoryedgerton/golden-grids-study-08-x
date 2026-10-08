@@ -255,3 +255,10 @@ main { width: 100%; padding: 0 12px; }
 .credits { margin-top: 10px; }
 .credits summary { cursor: pointer; font-weight: 600; color: var(--ink); min-height: 24px; }
 .credits ul { margin: 6px 0 0; padding-left: 1.2em; }
+
+/* The outlined pill: grey hairline, bold ink text, a faint ink wash on hover. */
+:root {
+  --cta2-font: 700 15px/1 var(--font); --cta2-pad: 0 18px; --cta2-min-h: 40px;
+  --cta2-color: var(--ink); --cta2-bg: transparent; --cta2-border: 1px solid var(--line-2); --cta2-radius: 999px;
+  --cta2-hover-bg: color-mix(in srgb, var(--ink) 10%, transparent); --cta2-hover-border: 1px solid var(--line-2);
+}
