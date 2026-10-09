@@ -34,13 +34,9 @@ is a public aggregator's snapshot of X's trends, worldwide and United
 States, at 9:08 AM EDT on October 7, 2026, with a note that ノーベル化学賞
 (Nobel Prize in Chemistry) led the worldwide list earlier that morning.
 
-## The claim
+## Approach
 
-A timeline is a column of cards of one size that treats a two-line
-remark and a day's news the same; here each post is one grid, its text in
-the hero square set as large as the square allows, its figure, photograph
-and facts in the squares that follow, and each post in its own
-orientation, so the feed reads as a column of different cards.
+The reference is a column of posts of one card size, with a left rail and a right rail. The study sets each post as one grid: its text in the largest square, set as large as the square allows, and its figure, photograph and facts in the squares that follow. Each post takes a different orientation.
 
 ## The pages
 
@@ -103,19 +99,22 @@ press room, Soai's university, Halzen, IceCube and Deisseroth stand in.
   under 12px, axe (WCAG 2.0/2.1/2.2 A/AA, best practice) clean with a More
   open. No screen-reader user has tested it.
 
-## What did not
+## Notes for review
 
-- No capture, so no side-by-side and no measured tokens; the structure is
-  from knowledge of the app.
-- The posts are the network's own, because no real post can be
-  reproduced and none should be invented in a real person's name. A
-  timeline of one voice is not what the reference shows.
-- Engagement counts, the thing the reference prints under every post, are
-  absent: there are none to print. The action row shows controls only.
-- The trends snapshot carries no post counts, so "What's happening" lacks
-  the figure the reference puts under each trend.
-- The 120px cap leaves a 647px hero mostly ground when the text is short
-  (the Padres post); the longer posts fill it.
+Observations for whoever reviews this study, recorded without a verdict. Whether the layout suits the page is assessed separately, after every study has been reviewed.
+
+- **No capture.** There is no side-by-side and no measured colour or type; the structure is from knowledge of the app.
+- **One voice.** Every post is the network's own, because no real post can be reproduced and none is invented in a real person's name; the reference's timeline has many authors.
+- **No engagement counts.** The reference prints them under every post; none exist here, so the action row shows controls only.
+- **Trends.** The snapshot has no post counts, which the reference shows under each trend.
+- **Fitted type.** With the 120px cap, a short post leaves room in a 647px square.
+
+## Disclosure
+
+Every page says what it is in three places, all read from
+[`src/study.json`](src/study.json): its title and description, a sticky notice
+at the top, and a disclosure at the very end listing the pages reviewed, what
+is real, what is invented or changed, and where each kind of asset came from.
 
 ## Study tools
 
