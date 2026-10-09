@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Tools } from "./tools";
+import { StudyBanner, StudyDisclosure } from "./study";
 import { ACCOUNT, CREDITS, DATELINE, DESKS, TRENDS, WHO_TO_FOLLOW, PREMIUM } from "../content";
 
 /**
@@ -17,6 +18,7 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
   return (
     <>
       <a className="skip" href="#content">Skip to content</a>
+      <StudyBanner />
       <Tools />
       <div className="app">
         <nav className="rail" aria-label="Sections">
@@ -46,25 +48,6 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
             </header>
             {children}
           </main>
-          <footer className="colophon">
-            <p>
-              A layout study of X's signed-in home and Explore pages, built from their known structure without a
-              capture (the pages require an account). GIFcommit is a fictional network. Every post is by one of
-              the network's own desks and states facts from the Royal Swedish Academy of Sciences' press release of
-              7 October 2026 (<a href="https://www.nobelprize.org/prizes/chemistry/2026/press-release/">NobelPrize.org</a>),
-              NobelPrize.org's announcements of 5 and 6 October, and Wikipedia (CC BY-SA 4.0, linked where used); no
-              post is attributed to a real person and no engagement figure is shown. Trends are a public
-              aggregator's snapshot of X trends at {new Date(TRENDS.captured).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York", timeZoneName: "short" })} on
-              October 7, 2026 ({TRENDS.source}). Nothing from X — marks, design, posts — is reproduced. Built with{" "}
-              <a href="https://github.com/gregoryedgerton/golden-grids">Golden Grids</a> ·{" "}
-              <a href="https://www.npmjs.com/package/@gifcommit/golden-grids">npm</a> ·{" "}
-              <a href="https://gregoryedgerton.github.io/golden-grids/">generator</a>.
-            </p>
-            <details className="credits">
-              <summary>Photograph credits</summary>
-              <ul>{CREDITS.map((p) => <li key={p.src}><a href={p.page}>{p.alt}</a> — {p.credit}, {p.licence}.</li>)}</ul>
-            </details>
-          </footer>
         </div>
 
         <aside className="side" aria-label="What's happening">
@@ -107,6 +90,13 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
           <p className="side__foot">Desks: {Object.values(DESKS).map((d) => `@${d.handle}`).join(" · ")}. All fictional.</p>
         </aside>
       </div>
+      <StudyDisclosure>
+        <details className="credits">
+          <summary>Photograph credits</summary>
+          <ul>{CREDITS.map((p) => <li key={p.src}><a href={p.page}>{p.alt}</a> — {p.credit}, {p.licence}.</li>)}</ul>
+        </details>
+        <p>Trends snapshot: {TRENDS.source}, {new Date(TRENDS.captured).toLocaleString("en-US", { dateStyle: "long", timeStyle: "short", timeZone: "America/New_York" })} Eastern.</p>
+      </StudyDisclosure>
       <nav className="tabbar" aria-label="Sections, phone">
         {NAV.slice(0, 2).map(([href, label]) => <a key={href} href={`./${href}`} aria-current={href === current ? "page" : undefined}>{label}</a>)}
         <a href="#compose">Post</a>
