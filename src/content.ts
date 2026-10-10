@@ -32,7 +32,8 @@ export const DESKS: Record<string, Desk> = {
   live: { handle: "GIFxLive", name: "GIFx Live", initial: "L", tone: "t4", bio: "Announcements and games as they happen." },
 };
 
-export const ACCOUNT = { name: "Greg", handle: "greg", initial: "G" };
+/** The signed-in reader has no name or handle: only an initial on the composer's avatar. */
+export const ACCOUNT = { initial: "G" };
 
 /** A photograph from Wikimedia Commons, with the attribution its licence asks for. */
 export interface Photo { src: string; alt: string; credit: string; licence: string; page: string; position?: string }

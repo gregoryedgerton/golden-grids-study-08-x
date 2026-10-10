@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { Tools } from "./tools";
 import { StudyBanner, StudyDisclosure } from "./study";
-import { ACCOUNT, CREDITS, DATELINE, DESKS, TRENDS, WHO_TO_FOLLOW, PREMIUM } from "../content";
+import { CREDITS, DATELINE, DESKS, TRENDS, WHO_TO_FOLLOW, PREMIUM } from "../content";
 
 /**
  * The signed-in shell, after the reference's three columns: a left rail of
@@ -36,7 +36,6 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
             })}
           </ul>
           <a className="btn btn--primary rail__post" href="./index.html#compose">Post</a>
-          <p className="rail__account"><span className="avatar avatar--me" aria-hidden="true">{ACCOUNT.initial}</span><span className="rail__label"><strong>{ACCOUNT.name}</strong> <span className="muted">@{ACCOUNT.handle}</span></span></p>
         </nav>
 
         <div className="frame">

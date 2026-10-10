@@ -19,7 +19,7 @@ the [study template](https://github.com/gregoryedgerton/golden-grids-study-templ
 
 X's web app, signed in, as of 2026: three columns at 1440 — a left rail
 (Home, Explore, Notifications, Messages, Bookmarks, Communities, Premium,
-Profile, a Post control, the account), a 600px centre with the For you /
+Profile, a Post control), a 600px centre with the For you /
 Following tabs, a composer and the feed of posts (author line, text,
 media, an action row), and a right rail of search, a Premium card, "What's
 happening" with trends and "Who to follow". Explore leads with a trends
