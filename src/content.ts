@@ -1,5 +1,5 @@
 /**
- * GIFcommit — a fictional social network's signed-in home and Explore on
+ * GIFx — a fictional social network's signed-in home and Explore on
  * Wednesday, October 7, 2026, the day the Nobel Prize in Chemistry was
  * announced and, for part of the day, the most-trended topic on X
  * worldwide (captures/trends.json records the snapshot and its source).
@@ -26,10 +26,10 @@ export const TRENDS = trends as { captured: string; source: string; earlier: str
 
 export interface Desk { handle: string; name: string; initial: string; tone: string; bio: string }
 export const DESKS: Record<string, Desk> = {
-  science: { handle: "GIFcommitScience", name: "GIFcommit Science", initial: "S", tone: "t1", bio: "The network's science desk. Prizes, papers and the people behind them, with the sources linked." },
-  news: { handle: "GIFcommitNews", name: "GIFcommit News", initial: "N", tone: "t2", bio: "What is happening now, in order, from the record." },
-  explain: { handle: "GIFcommitExplains", name: "GIFcommit Explains", initial: "E", tone: "t3", bio: "One idea at a time. Figures drawn, terms defined." },
-  live: { handle: "GIFcommitLive", name: "GIFcommit Live", initial: "L", tone: "t4", bio: "Announcements and games as they happen." },
+  science: { handle: "GIFxScience", name: "GIFx Science", initial: "S", tone: "t1", bio: "The network's science desk. Prizes, papers and the people behind them, with the sources linked." },
+  news: { handle: "GIFxNews", name: "GIFx News", initial: "N", tone: "t2", bio: "What is happening now, in order, from the record." },
+  explain: { handle: "GIFxExplains", name: "GIFx Explains", initial: "E", tone: "t3", bio: "One idea at a time. Figures drawn, terms defined." },
+  live: { handle: "GIFxLive", name: "GIFx Live", initial: "L", tone: "t4", bio: "Announcements and games as they happen." },
 };
 
 export const ACCOUNT = { name: "Greg", handle: "greg", initial: "G" };
@@ -176,6 +176,6 @@ export const OTHER_POSTS: Post[] = [
 export const WHO_TO_FOLLOW: Desk[] = [DESKS.science, DESKS.explain, DESKS.live];
 
 export const PREMIUM = {
-  name: "GIFcommit Premium", price: "$8", period: "a month", pitch: "Longer posts, an edit window, fewer promoted posts, and a share of the network's revenue for creators. Billed yearly.", cta: "Subscribe",
+  name: "GIFx Premium", price: "$8", period: "a month", pitch: "Longer posts, an edit window, fewer promoted posts, and a share of the network's revenue for creators. Billed yearly.", cta: "Subscribe",
   bullets: ["Edit for an hour after posting", "Half the promoted posts", "Posts up to 25,000 characters"],
 };

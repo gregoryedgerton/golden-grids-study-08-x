@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "description": "Golden Grids layout study 08: X's signed-in home and Explore as GIFcommit, a fictional network, on the day the 2026 Nobel Prize in Chemistry was announced.",
+  "description": "Golden Grids layout study 08: X's signed-in home and Explore as GIFx, a fictional network, on the day the 2026 Nobel Prize in Chemistry was announced.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

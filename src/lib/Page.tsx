@@ -8,7 +8,7 @@ import { ACCOUNT, CREDITS, DATELINE, DESKS, TRENDS, WHO_TO_FOLLOW, PREMIUM } fro
  * destinations and a Post control, the page in the centre, and a right
  * rail of search, a subscription card, "What's happening" and "Who to
  * follow". At phone width the rail becomes a bottom tab bar and the right
- * rail folds under the page. GIFcommit is a fictional network; the trends
+ * rail folds under the page. GIFx is a fictional network; the trends
  * are a real snapshot (captures/trends.json) and the posts are the
  * network's own desks.
  */
@@ -22,7 +22,7 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
       <Tools />
       <div className="app">
         <nav className="rail" aria-label="Sections">
-          <a className="wordmark" href="./index.html" aria-label="GIFcommit home"><span className="wordmark__mark" aria-hidden="true">G</span></a>
+          <a className="wordmark" href="./index.html" aria-label="GIFx home"><span className="wordmark__mark" aria-hidden="true">G</span></a>
           <ul>
             {NAV.map(([href, label, glyph]) => {
               const real = href.endsWith(".html");

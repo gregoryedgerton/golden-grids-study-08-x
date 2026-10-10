@@ -1,10 +1,10 @@
-# Layout study — X's signed-in home and Explore, as GIFcommit
+# Layout study — X's signed-in home and Explore, as GIFx
 
 **Live:** [`https://gregoryedgerton.github.io/golden-grids-study-08-x/`](https://gregoryedgerton.github.io/golden-grids-study-08-x/)
 
 An unaffiliated layout study. It rebuilds the structure of X's signed-in
 home (For you) and Explore (Trending) pages as stacked golden grids for
-GIFcommit, a fictional network, on Wednesday, October 7, 2026 — the day
+GIFx, a fictional network, on Wednesday, October 7, 2026 — the day
 the Nobel Prize in Chemistry was announced and, for part of the morning,
 the most-trended topic on X worldwide. Every post is by one of the
 network's own desks and states facts from the Royal Swedish Academy of
