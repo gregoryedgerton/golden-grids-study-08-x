@@ -35,7 +35,7 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
               );
             })}
           </ul>
-          <a className="btn btn--primary rail__post" href="#compose">Post</a>
+          <a className="btn btn--primary rail__post" href="./index.html#compose">Post</a>
           <p className="rail__account"><span className="avatar avatar--me" aria-hidden="true">{ACCOUNT.initial}</span><span className="rail__label"><strong>{ACCOUNT.name}</strong> <span className="muted">@{ACCOUNT.handle}</span></span></p>
         </nav>
 
@@ -99,7 +99,7 @@ export function Page({ current, title, standfirst, children, rightFirst }: { cur
       </StudyDisclosure>
       <nav className="tabbar" aria-label="Sections, phone">
         {NAV.slice(0, 2).map(([href, label]) => <a key={href} href={`./${href}`} aria-current={href === current ? "page" : undefined}>{label}</a>)}
-        <a href="#compose">Post</a>
+        <a href="./index.html#compose">Post</a>
         <a href="#trends-title">Trends</a>
       </nav>
     </>
